@@ -1,103 +1,47 @@
+<script src="index.js"></script>
+<script src="jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Cisco Security</title>
+
 <!DOCTYPE html>
-<html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #4CAF50;
-        }
-        .bio, .contact {
-            margin-bottom: 20px;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form label {
-            margin-bottom: 5px;
-        }
-        .contact-form input, .contact-form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome To The Shadow Realm</h1>
-    </header>
-    <nav>
-        <a href="#bio">Biografi</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
-    <div class="container">
-        <section id="bio" class="bio">
-            <h2>Biografi</h2>
-            <p>Hej, mit navn er Bob. Jeg er en professionel i at være professionel med en passion for passionsfrugt. Jeg har arbejdet indenfor [dit felt] i [antal år] år og har opnået betydelige resultater indenfor mit område. Min erfaring inkluderer arbejde med [nogle nøgleprojekter eller -virksomheder], hvor jeg har haft mulighed for at udvikle mine færdigheder indenfor [specifikke færdigheder eller områder].</p>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Kontakt</h2>
-            <form class="contact-form">
-                <label for="name">Navn:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Besked:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </div>
-    <script>
-        document.querySelector('.contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Tak for din besked! Jeg vender tilbage til dig snarest.');
-        });
-    </script>
-</body>
+<html>
+    <body>
+        <!-- Darkgreen box in the top -->
+        <div class="main_top_box"></div>
+        <div class="main_top_box_text">
+            <!--<img src="CiscoSecurity.png" id="CiscoSecurity_img">-->
+        </div>
+
+        <!-- debug information for detecting site -->
+        <p id="side_id">home</p>
+
+        <!-- deprecated menu switch -->
+        <div id="main_details_div">
+            <details id="main_details">
+                <summary id="main_details_sum"></summary>
+                <p>Test</p><br>
+                <p>test1</p>
+            </details>
+        </div>
+
+        <!-- Main text (Welcome text) -->
+        <div class="main">
+            <h1 id="main_h1_1">Welcome to Cisco Security</h1>
+        </div>
+
+        <!-- Darkgreen box & text -->
+        <div class="main_box"></div>
+        <div class="main_box_text">
+            <input id="main_box_Home" type="button" value="Home"><br>
+            <input id="main_box_Contact" type="button" value="Contact"><br>
+            <input id="main_box_Creator" type="button" value="Creator"><br>
+            <input id="main_box_About" type="button" value="About"><br>
+            <input id="main_box_Secret" type="button" value=""><br>
+            <p id="main_box_RoadName">Hasselager Allé 2</p>
+            <p id="main_box_PostNr">8260 Viby</p>
+            <p id="main_box_Phone">1-800-Cisco-Sec</p>
+            <p id="main_box_Email">Email support: security@cisco.com</p>
+        </div>
+        <img src="CiscoSecurity.png" id="CiscoSecurity_img2">
+    </body>
 </html>
