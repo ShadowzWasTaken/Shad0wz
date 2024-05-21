@@ -1,16 +1,103 @@
-<Html>    
-<Head>  
-<title>  
-Example of Header-levels  
-</title>  
-</Head>  
-<Body>   
-  
-<h6> JavaTpoint </h6>   
-<h5> JavaTpoint </h5>  
-<h4> JavaTpoint </h4>  
-<h3> JavaTpoint </h3>  
-<h2> JavaTpoint </h2>  
-<h1> JavaTpoint </h1>  
-</Body>  
-</Html>  
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .bio, .contact {
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To The Shadow Realm</h1>
+    </header>
+    <nav>
+        <a href="#bio">Biografi</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <div class="container">
+        <section id="bio" class="bio">
+            <h2>Biografi</h2>
+            <p>Hej, mit navn er Bob. Jeg er en professionel i at være professionel med en passion for passionsfrugt. Jeg har arbejdet indenfor [dit felt] i [antal år] år og har opnået betydelige resultater indenfor mit område. Min erfaring inkluderer arbejde med [nogle nøgleprojekter eller -virksomheder], hvor jeg har haft mulighed for at udvikle mine færdigheder indenfor [specifikke færdigheder eller områder].</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <form class="contact-form">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Besked:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Tak for din besked! Jeg vender tilbage til dig snarest.');
+        });
+    </script>
+</body>
+</html>
