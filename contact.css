@@ -1,0 +1,13 @@
+.main_contact {
+    margin: 0%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main_contact > p {
+    font-size: 18;
+    margin: 5;
+}

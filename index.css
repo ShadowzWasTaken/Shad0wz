@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+h4 {
+    margin: 15%;
+    padding: 0%;
+}
+
+details {
+    display: block;
+}
+
+details > p {
+    margin: 0%;
+    position: absolute;
+}
+
+/*button {
+    background: none;
+	color: inherit;
+	border: none;
+    margin: 5%;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-weight: bold;
+}*/
+
+input {
+    background: none;
+	color: inherit;
+	border: none;
+    /*margin: 5%;*/
+	font: inherit;
+    height: auto;
+	cursor: pointer;
+	outline: inherit;
+    font-weight: bold;
+}
+
+#side_id {
+    font-size: 0;
+}
+
+.main {
+    margin: 0%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*.main_top_box { 
+    margin: 0%;
+    padding: 0%;
+    width: 2560px;
+    height: 125px;
+    position: absolute;
+    background-color: darkgreen;
+    top: 0%;
+    left: 0%;
+}*/
+
+#CiscoSecurity_img {
+    max-width: 15%;
+    height: auto;
+    position: absolute;
+    padding: 0%;
+    margin: 0%;
+    top: 0%;
+    left: 0%;
+}
+
+#CiscoSecurity_img2 {
+    max-width: 16%;
+    height: auto;
+    position: absolute;
+    padding: 0%;
+    margin: 0%;
+    top: 77.5%;
+    left: 82.5%;
+}
+
+.main_box { 
+    margin: 0%;
+    padding: 0%;
+    width: 2560px;
+    height: 250px;
+    position: absolute;
+    background-color: darkgreen;
+    top: 75%;
+    left: 0%;
+}
+
+.main_box_text > p {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main_box_text > #main_box_Home {
+    font-size: 0%;
+}
+
+.main_box_text {
+    margin: 0;
+    padding: 0%;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    font-size: 18;
+}

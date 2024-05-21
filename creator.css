@@ -1,0 +1,18 @@
+.main_creator {
+    margin: 0%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main_creator > p {
+    font-size: 16;
+    margin: 5;
+}
+
+#main_creator_p_1 {
+    font-size: 20;
+    font-weight: bold;
+}
